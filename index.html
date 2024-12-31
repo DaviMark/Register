@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <div class="login-wrapper">
+        <div class="image-section"></div>
+        <div class="login-card">
+            <form class="login-form">
+                <h2>Bem-vindo</h2>
+                <p>Acesse sua conta para continuar</p>
+                <div class="input-group">
+                    <i class="fa fa-user"></i>
+                    <input type="text" placeholder="E-mail" required>
+                </div>
+                <div class="input-group">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" placeholder="Senha" required>
+                </div>
+                <button type="submit" class="btn">Entrar</button>
+                <div class="options">
+                    <a href="#">Esqueceu a senha?</a>
+                    <a href="/register.html">Registrar-se</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".login-card").addClass("slide-in");
+        });
+    </script>
+</body>
+</html>
